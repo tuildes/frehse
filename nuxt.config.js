@@ -13,6 +13,7 @@ export default defineNuxtConfig({
 
 	// Define o cabeçalho do Nuxt [meta tags]
 	app: {
+		baseURL: "/pessoal-site/", // baseURL: '/<repository>/'
 		head: {
 			// Define os metadados do projeto gerais
 			charset: "utf-8",
