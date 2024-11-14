@@ -63,6 +63,7 @@ export default defineNuxtConfig({
 	build: {
 		transpile: ["vuetify"],
 	},
+
 	modules: [
 		(_options, nuxt) => {
 			nuxt.hooks.hook("vite:extendConfig", (config) => {
@@ -74,6 +75,7 @@ export default defineNuxtConfig({
 		"nuxt3-notifications",
 		"@pinia/nuxt",
 	],
+
 	vite: {
 		vue: {
 			template: {
@@ -82,4 +84,6 @@ export default defineNuxtConfig({
 		},
 		plugins: [eslintPlugin()],
 	},
+
+	compatibilityDate: "2024-11-14",
 })
