@@ -1,15 +1,15 @@
+<script setup lang="js">
+import Banner from '@/components/banner.vue';
+</script>
+
 <template>
-  <div class="about">
-    <h1>...</h1>
-  </div>
+  <main>
+    <Banner />
+  </main>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
+<style scoped>
+  main{
     min-height: 100vh;
-    display: flex;
-    align-items: center;
   }
-}
 </style>
