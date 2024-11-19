@@ -4,7 +4,7 @@ import Banner from '@/components/banner.vue';
 
 <template>
   <main>
-    <Banner />
+    <Banner text="Gustavo" />
   </main>
 </template>
 
