@@ -15,7 +15,7 @@ export default function NavBar() {
       <header className={Styles.header__wrapper}>
         <div className={Styles.header__content}> 
             <span className={Styles.title + ' ' + moirai.className}>
-                <span>t</span>.
+                <span>tuildes</span>.
             </span>
             <div className={Styles.links}>
                 {linksNavbar.map((item, index) => (

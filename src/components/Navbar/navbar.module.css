@@ -22,8 +22,8 @@
     font-weight: 800;
 }
 
-.header__content .title::first-letter {
-    color: var(--home-primary);
+.header__content .title span {
+    color: var(--page-primary);
 }
 
 .header__content .links {
@@ -35,13 +35,13 @@
 }
 
 .header__content .links a {
-    opacity: 0.5;
+    opacity: 0.75;
     transition: all 0.25s;
     cursor: pointer;
 }
 
 .header__content .links a:hover {
-    color: var(--home-primary);
+    color: var(--page-primary);
     opacity: 1;
     font-weight: 600;
 }
