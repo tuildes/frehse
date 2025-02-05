@@ -1,0 +1,47 @@
+.header__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 50px;
+    width: 100vw;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 32px;
+}
+
+.header__content .title {
+    font-size: 32px;
+    color: #fff;
+    cursor: default;
+    font-weight: 800;
+}
+
+.header__content .title::first-letter {
+    color: var(--home-primary);
+}
+
+.header__content .links {
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    gap: 20px;
+    text-transform: lowercase;
+}
+
+.header__content .links a {
+    opacity: 0.5;
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+.header__content .links a:hover {
+    color: var(--home-primary);
+    opacity: 1;
+    font-weight: 600;
+}
