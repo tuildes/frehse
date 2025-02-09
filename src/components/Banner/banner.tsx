@@ -1,5 +1,5 @@
 import Styles from "./banner.module.css"
-import Image, { StaticImageData } from "next/image"
+import Image from "next/image"
 
 export default function Banner({ title, subtitle, image }: { title: string, subtitle: string, image: string }) {
     return(
