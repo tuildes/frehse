@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 import Styles from "./footer.module.css"
-
+import Link from "next/link"
 import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, 
          IconBrandNotion, IconBrandGmail } from '@tabler/icons-react';
 
@@ -24,9 +24,9 @@ export default function Footer() {
             <div className={Styles.footer__content}>
                 <div className={Styles.footer__contact}>
                     {contactIcons.map((item, index) => (
-                        <a href={item.link} target="__blank" key={index} className={Styles.icon}>
+                        <Link href={item.link} target="__blank" key={index} className={Styles.icon}>
                             {item.icon}
-                        </a>
+                        </Link>
                     ))}
                 </div>
                 <small className={Styles.footer__citation}>

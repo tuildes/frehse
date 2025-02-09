@@ -1,5 +1,6 @@
 import Styles from "./introduction.module.css"
 import Image from "next/image"
+import Link from "next/link"
 
 import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react';
 
@@ -30,12 +31,12 @@ export default function Introduction() {
                             massa commodo blandit. <strong>Fusce luctus eros</strong> quis ligula  consequat blandit.
                         </span>
                         <div className={Styles.introduction__links}>
-                            <a href={githubLink} target="__blank">
+                            <Link href={githubLink} target="__blank">
                                 <IconBrandGithub className={Styles.icon} color="white" size={sizeIcon} />
-                            </a>
-                            <a href={linkedinLink} target="__blank">
+                            </Link>
+                            <Link href={linkedinLink} target="__blank">
                                 <IconBrandLinkedin className={Styles.icon} color="white" size={sizeIcon} />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

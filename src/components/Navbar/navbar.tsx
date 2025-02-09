@@ -1,4 +1,4 @@
-import { link } from "fs";
+import Link from "next/link";
 import Styles from "./navbar.module.css"
 
 import { Moirai_One } from 'next/font/google'
@@ -14,14 +14,14 @@ export default function NavBar() {
     return (
       <header className={Styles.header__wrapper}>
         <div className={Styles.header__content}> 
-            <a href="/" className={Styles.title + ' ' + moirai.className}>
+            <Link href="/" className={Styles.title + ' ' + moirai.className}>
                 <span>tuildes</span>.
-            </a>
+            </Link>
             <div className={Styles.links}>
                 {linksNavbar.map((item, index) => (
-                    <a key={index} href={item.link}>
+                    <Link key={index} href={item.link}>
                         {item.name}
-                    </a>
+                    </Link>
                 ))}
             </div>
         </div>
