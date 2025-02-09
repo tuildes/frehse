@@ -1,0 +1,96 @@
+.introduction__wrapper {
+    height: 100vh;
+    width: 100vw;
+}
+
+.introduction__content {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.introduction__profilePhoto {
+    position: absolute;
+
+    width: 360px;
+    height: 360px;
+
+    top: calc(50% - 180px);
+    right: calc(35vw - 180px);
+}
+
+.introduction__about {
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    padding: 80px;
+    font-size: 24px;
+}
+
+.introduction__about div {
+    margin-right: 120px;
+}
+
+.introduction__about div h1 {
+    margin-bottom: 20px;
+}
+
+.introduction__links {
+    margin-top: 30px;
+}
+
+.introduction__links a {
+    cursor: pointer;
+}
+
+.introduction__links a svg {
+    opacity: 0.75;
+    transition: opacity 0.25s;
+    margin-right: 10px;
+}
+
+.introduction__links a svg:hover {
+    opacity: 1;
+}
+
+.introduction__name {
+    height: 100%;
+    width: 35%;
+}
+
+.introduction__nameText {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 54px;
+}
+
+.introduction__nameText span {
+    margin-left: 120px;
+}
+
+.introduction__nameText small {
+    position: absolute;
+    top: 97vh;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 0;
+}
+
+.introduction__nameBackground {
+    filter: brightness(0.6);
+    position: absolute;
+    z-index: -1;
+}
