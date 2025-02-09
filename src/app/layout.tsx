@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
+import type { Metadata } from "next"
 import { Lexend } from 'next/font/google'
-import "./globals.css";
+import "./globals.css"
 
 const lexend = Lexend({ subsets: ['latin'] })
 
 // Components
-import Navbar from "@/components/Navbar/navbar";
+import Navbar from "@/components/Navbar/navbar"
+import Footer from "@/components/Footer/footer"
 
 export const metadata: Metadata = {
   title: "Gustavo Frehse",
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={lexend.className}>
         <Navbar></Navbar>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );

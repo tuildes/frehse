@@ -1,0 +1,50 @@
+.footer__wrapper {
+    height: auto;
+    width: 100vw;
+}
+
+.footer__content {
+    background-color: transparent;
+    padding: 16px;
+
+    display: flex;
+    gap: 24px;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__contact {
+    display: flex;
+    gap: 12px;
+}
+
+.footer__contact a {
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.footer__contact a:hover {
+    background-color: var(--page-primary);
+}
+
+.footer__routers {
+    display: flex;
+    gap: 8px;
+}
+
+.footer__routers a {
+    opacity: 0.75;
+    transition: all 0.5s;
+}
+
+.footer__routers a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
