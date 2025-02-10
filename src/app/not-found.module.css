@@ -1,0 +1,27 @@
+:root {  
+    --page-primary: hsl(0, 100%, 60%);
+}
+
+.error {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+    font-size: clamp(20px, 3vw ,32px);
+}
+
+.error p {
+    font-weight: 200;
+    margin-top: 8px;
+}
+
+.error a {
+    margin-top: 16px;
+    color: var(--page-primary);
+    cursor: pointer;
+}
+
+.error a:hover {
+    text-decoration: underline;
+}
