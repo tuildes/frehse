@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "next/link"
 import Styles from "./navbar.module.css"
 
 import { Moirai_One } from 'next/font/google'
