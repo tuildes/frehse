@@ -1,8 +1,9 @@
 import "./portfolio.module.css"
 
 import Banner from "@/components/Banner/banner"
+import PortfolioMain from "@/components/PortfolioMain/portfolio-main"
 
-export default function Gallery() {
+export default function Portfolio() {
   return (
     <div>
       <Banner 
@@ -10,6 +11,7 @@ export default function Gallery() {
         subtitle="Code works, notion templates and others" 
         image="/banner.portfolio.png"
       />
+      <PortfolioMain />
     </div>
   );
 }
