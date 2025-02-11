@@ -16,61 +16,73 @@ const cards: {
     image: string,
     description: string,
     type: number,
+    date: string,
+    showcaseImage: string,
+    longDescription: string,
+    principalType: string,
+    skills: string[],
+    links: string[]
  }[] = [
     {
         name: "Snow Impact (GAME)",
-        image: "/portfolio/placeholder.jpg",
-        description: "...",
-        type: 2
+        image: "/portfolio/placeholder.image.png",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultrices neque eget nulla dignissim euismod. Donec interdum ipsum quis pellentesque lacinia. Nullam tincidunt id nunc. ",
+        type: 2,
+        date: "2024",
+        showcaseImage: "/portfolio/placeholder.showcase.png",
+        longDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat pretium lorem vel pellentesque. Pellentesque sed scelerisque orci. Sed volutpat neque sed ex pellentesque, in congue diam tincidunt. Ut mollis urna ut nisl placerat luctus. Duis eget pulvinar felis. Etiam at suscipit diam, non finibus ex. Vestibulum nec ligula a tortor commodo molestie at nec libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer vel elit in mi varius suscipit. Ut condimentum bibendum purus sit amet efficitur. Mauris sit amet odio lacinia, viverra quam eget, sollicitudin nulla. Maecenas tempus, quam ac consectetur luctus, nisi. ",
+        principalType: "C and Allegro5",
+        skills: [ "C", "Allegro5" ],
+        links: [ "https://github.com/tuildes/snow-impact" ]
     },
-    {
-        name: "Juntos Pelo Miguel",
-        image: "/portfolio/placeholder.jpg",
-        description: "...",
-        type: 1
-    },
-    {
-        name: "JR Consultoria",
-        image: "/portfolio/placeholder.jpg",
-        description: "...",
-        type: 1
-    },
-    {
-        name: "Hero Simulator",
-        image: "/portfolio/placeholder.jpg",
-        description: "...",
-        type: 2
-    },
-    {
-        name: "SACI 2024 - Workshop",
-        image: "/portfolio/placeholder.jpg",
-        description: "...",
-        type: 3
-    },
-    {
-        name: "Scrum Master - Nostrosole",
-        image: "/portfolio/placeholder.jpg",
-        description: "...",
-        type: 3
-    },
-    {
-        name: "Retrozule",
-        image: "/portfolio/placeholder.jpg",
-        description: "...",
-        type: 1
-    },
-    {
-        name: "Landing Page GREATNESS",
-        image: "/portfolio/placeholder.jpg",
-        description: "...",
-        type: 1
-    },
-    {
-        name: "Notion templates",
-        image: "/portfolio/placeholder.jpg",
-        description: "...",
-        type: 3
-    },
+    // {
+    //     name: "Juntos Pelo Miguel",
+    //     image: "/portfolio/placeholder.jpg",
+    //     description: "...",
+    //     type: 1
+    // },
+    // {
+    //     name: "JR Consultoria",
+    //     image: "/portfolio/placeholder.jpg",
+    //     description: "...",
+    //     type: 1
+    // },
+    // {
+    //     name: "Hero Simulator",
+    //     image: "/portfolio/placeholder.jpg",
+    //     description: "...",
+    //     type: 2
+    // },
+    // {
+    //     name: "SACI 2024 - Workshop",
+    //     image: "/portfolio/placeholder.jpg",
+    //     description: "...",
+    //     type: 3
+    // },
+    // {
+    //     name: "Scrum Master - Nostrosole",
+    //     image: "/portfolio/placeholder.jpg",
+    //     description: "...",
+    //     type: 3
+    // },
+    // {
+    //     name: "Retrozule",
+    //     image: "/portfolio/placeholder.jpg",
+    //     description: "...",
+    //     type: 1
+    // },
+    // {
+    //     name: "Landing Page GREATNESS",
+    //     image: "/portfolio/placeholder.jpg",
+    //     description: "...",
+    //     type: 1
+    // },
+    // {
+    //     name: "Notion templates",
+    //     image: "/portfolio/placeholder.jpg",
+    //     description: "...",
+    //     type: 3
+    // },
  ]
 
 export default function PortfolioMain() {
@@ -99,6 +111,12 @@ export default function PortfolioMain() {
                                 name={card.name}
                                 image={card.image}
                                 description={card.description}
+                                date={card.date}
+                                showcaseImage={card.showcaseImage}
+                                longDescription={card.longDescription}
+                                principalType={card.principalType}
+                                skills={card.skills}
+                                links={card.links}
                             />
                     ))}
                 </div>

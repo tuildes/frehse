@@ -25,6 +25,7 @@
     font-family: "Lexend", sans-serif;
     text-transform: lowercase;
     padding: 4px 16px;
+    border-radius: 5px;
 
     background-color: transparent;
     transition: background-color 0.25s;
