@@ -34,9 +34,9 @@ export default function Footer() {
                 </small>
                 <div className={Styles.footer__routers}>
                     {pages.map((item, index) => (
-                        <a className={Styles.link} key={index} href={item.link}>
+                        <Link className={Styles.link} key={index} href={item.link}>
                             {item.name}
-                        </a>
+                        </Link>
                     ))}
                 </div>
             </div>

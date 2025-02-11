@@ -19,11 +19,14 @@
     padding: 32px;
 
     display: grid;
-    grid-row-start: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: auto;
-
+.gallery__cols {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     gap: 32px;
 }
 
