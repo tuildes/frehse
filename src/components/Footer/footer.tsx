@@ -61,7 +61,7 @@ export default function Footer() {
                     ))}
                 </div>
                 <small className={Styles.footer__citation}>
-                    <strong>Today's album recommendation:</strong> {albums[randomInt(albums.length)]}
+                    <strong>Today&rsquo;s album recommendation:</strong> {albums[randomInt(albums.length)]}
                 </small>
                 <div className={Styles.footer__routers}>
                     {pages.map((item, index) => (
