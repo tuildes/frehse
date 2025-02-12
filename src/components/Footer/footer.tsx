@@ -30,7 +30,7 @@ export default function Footer() {
                     ))}
                 </div>
                 <small className={Styles.footer__citation}>
-                    <i>'Todas as coisas mudam com o passar do tempo / E eu não sei por que insisto em dizer que sou o mesmo'</i> - Makalister on Estações
+                    <i>'Todas as coisas mudam com o passar do tempo. E eu não sei por que insisto em dizer que sou o mesmo'</i> - Makalister on Estações
                 </small>
                 <div className={Styles.footer__routers}>
                     {pages.map((item, index) => (
