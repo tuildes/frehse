@@ -1,11 +1,9 @@
 import Image from 'next/image'
-
 import Styles from './gallery.module.css'
-
 import Banner from '@/components/Banner/banner'
 
 const content: { image: string; alt: string }[] = [
-    { image: '/gallery/cat.jpg', alt: 'Cat in chair' },
+    { image: '/frehse/gallery/cat.jpg', alt: 'Cat in chair' },
 ]
 
 export default function Gallery() {
@@ -14,7 +12,7 @@ export default function Gallery() {
             <Banner
                 title="Gallery"
                 subtitle="Photos and small works"
-                image="/banner.gallery.png"
+                image="/frehse/banner.gallery.png"
             />
             <main className={Styles.gallery__content}>
                 <div className={Styles.gallery__cols}>

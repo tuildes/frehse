@@ -8,6 +8,7 @@ import {
     IconBrandNotion,
     IconBrandGmail,
 } from '@tabler/icons-react'
+import { randomInt } from 'crypto'
 
 const contactIcons: { icon: ReactElement; link: string }[] = [
     {
@@ -38,6 +39,11 @@ const pages: { name: string; link: string }[] = [
     { name: 'Portfolio', link: '/portfolio' },
 ]
 
+const albums: string[] = [
+    "Grana Azul - Rodrigo Zin",
+    "Bittersweet Memories - Yun Li",
+]
+
 export default function Footer() {
     return (
         <footer className={Styles.footer__wrapper}>
@@ -55,11 +61,7 @@ export default function Footer() {
                     ))}
                 </div>
                 <small className={Styles.footer__citation}>
-                    <i>
-                        &quot;Todas as coisas mudam com o passar do tempo. E eu
-                        não sei por que insisto em dizer que sou o mesmo&quot;
-                    </i>
-                    - Makalister on Estações
+                    <strong>Today's album recommendation:</strong> {albums[randomInt(albums.length)]}
                 </small>
                 <div className={Styles.footer__routers}>
                     {pages.map((item, index) => (

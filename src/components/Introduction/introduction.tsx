@@ -13,25 +13,16 @@ export default function Introduction() {
     return (
         <div className={Styles.introduction__wrapper}>
             <div className={Styles.introduction__content}>
-                <div>
-                    <Image
-                        className={Styles.introduction__profilePhoto}
-                        src="/home/gustavo.png"
-                        alt="Gustavo Frehse"
-                        width={500}
-                        height={500}
-                    />
-                </div>
                 <div className={Styles.introduction__about}>
                     <div>
-                        <h1>Who am I?</h1>
+                        <h1>Hi i`m Tuildes 👋</h1>
                         <span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Nam eu volutpat nibh. Maecenas facilisis neque
-                            condimentum vestibulum imperdiet. Nulla tempus
-                            pretium massa commodo blandit.{' '}
-                            <strong>Fusce luctus eros</strong> quis ligula
-                            consequat blandit.
+                            I am a programmer in the areas of computer science and bioinformatics
+                            And currently a student of <strong>Biomedical Informatics</strong> at UFPR. 
+                            <br /><br />
+                            With experience in web and software development. 
+                            <br />
+                            I am currently at the <strong>Apple Developer Academy</strong>.
                         </span>
                         <div className={Styles.introduction__links}>
                             <Link href={githubLink} target="__blank">
@@ -54,12 +45,21 @@ export default function Introduction() {
                 <div className={Styles.introduction__name}>
                     <Image
                         className={Styles.introduction__nameBackground}
-                        src="/home/florest-thiago-falcao.jpg"
+                        src="/frehse/home/florest-thiago-falcao.jpg"
                         alt="Florest"
                         width={600}
                         height={1000}
                     />
                     <div className={Styles.introduction__nameText}>
+                        <div>
+                            <Image
+                                className={Styles.introduction__profilePhoto}
+                                src="/frehse/home/gustavo.png"
+                                alt="Gustavo Frehse"
+                                width={500}
+                                height={500}
+                            />
+                        </div>
                         <span>
                             Gustavo
                             <br />

@@ -5,8 +5,8 @@ import Styles from './portfolio.module.css'
 import Card from '@/components/Card/card'
 import Banner from '@/components/Banner/banner'
 
+// Tipos de portfolios, all (default)
 const types: string[] = [
-    // Tipos de portfolios, all (default)
     'all',
     'front-end',
     'softwares',
@@ -87,12 +87,54 @@ const cards: {
     // },
     {
         name: 'Retrozule',
-        image: '/portfolio/retrozule.image.png',
+        image: '/frehse/portfolio/retrozule.image.png',
         description:
             'A web puzzle game involving easy url and html manipulation challenges in a retro theme, using vue.js, nuxt.js and vuetify. ',
         type: 1,
         date: '2024',
-        showcaseImage: '/portfolio/placeholder.showcase.png',
+        showcaseImage: '/frehse/portfolio/placeholder.showcase.png',
+        longDescription:
+            'This was a project to test a new technology for implementation in early 2024 at Ecomp. Made entirely by me after testing, mainly to find errors and inconsistencies for later use in the company. The theme and style of the game is an old idea of ​​mine to make a "mini NOTPRON" with a retro anime theme. ',
+        principalType: 'Web game (Front End)',
+        skills: ['Front End', 'Vue 3', 'Nuxt 3', 'Technology migration'],
+        links: ['https://github.com/tuildes/Retrozule'],
+    },
+    {
+        name: 'Retrozule',
+        image: '/frehse/portfolio/retrozule.image.png',
+        description:
+            'A web puzzle game involving easy url and html manipulation challenges in a retro theme, using vue.js, nuxt.js and vuetify. ',
+        type: 1,
+        date: '2024',
+        showcaseImage: '/frehse/portfolio/placeholder.showcase.png',
+        longDescription:
+            'This was a project to test a new technology for implementation in early 2024 at Ecomp. Made entirely by me after testing, mainly to find errors and inconsistencies for later use in the company. The theme and style of the game is an old idea of ​​mine to make a "mini NOTPRON" with a retro anime theme. ',
+        principalType: 'Web game (Front End)',
+        skills: ['Front End', 'Vue 3', 'Nuxt 3', 'Technology migration'],
+        links: ['https://github.com/tuildes/Retrozule'],
+    },
+    {
+        name: 'Retrozule',
+        image: '/frehse/portfolio/retrozule.image.png',
+        description:
+            'A web puzzle game involving easy url and html manipulation challenges in a retro theme, using vue.js, nuxt.js and vuetify. ',
+        type: 1,
+        date: '2024',
+        showcaseImage: '/frehse/portfolio/placeholder.showcase.png',
+        longDescription:
+            'This was a project to test a new technology for implementation in early 2024 at Ecomp. Made entirely by me after testing, mainly to find errors and inconsistencies for later use in the company. The theme and style of the game is an old idea of ​​mine to make a "mini NOTPRON" with a retro anime theme. ',
+        principalType: 'Web game (Front End)',
+        skills: ['Front End', 'Vue 3', 'Nuxt 3', 'Technology migration'],
+        links: ['https://github.com/tuildes/Retrozule'],
+    },
+    {
+        name: 'Retrozule',
+        image: '/frehse/portfolio/retrozule.image.png',
+        description:
+            'A web puzzle game involving easy url and html manipulation challenges in a retro theme, using vue.js, nuxt.js and vuetify. ',
+        type: 1,
+        date: '2024',
+        showcaseImage: '/frehse/portfolio/placeholder.showcase.png',
         longDescription:
             'This was a project to test a new technology for implementation in early 2024 at Ecomp. Made entirely by me after testing, mainly to find errors and inconsistencies for later use in the company. The theme and style of the game is an old idea of ​​mine to make a "mini NOTPRON" with a retro anime theme. ',
         principalType: 'Web game (Front End)',
@@ -157,8 +199,8 @@ export default function Portfolio() {
         <div>
             <Banner
                 title="Portfolio"
-                subtitle="Code works, notion templates and others"
-                image="/banner.portfolio.png"
+                subtitle="Front end works, softwares and others"
+                image="/frehse/banner.portfolio.png"
             />
             <main className={Styles.portfolio__wrapper}>
                 <div className={Styles.portfolio__content}>
