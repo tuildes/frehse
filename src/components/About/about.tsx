@@ -22,10 +22,10 @@ const infos: {
         time: '2024 ~ now',
         description:
             <>
-                The Biomedical Informatics course at UFPR is a bachelor's degree that combines and provides 
+                The Biomedical Informatics course at UFPR is a bachelor&#39;s degree that combines and provides 
                 students with a curriculum that provides solid and integrated training in the <strong>areas of Computing, 
                 Biosciences and Health</strong>. The Biomedical Informatics course at UFPR has as a differential a predominant 
-                training in the area of ​​Computing. The dynamics of the student's training include conceptual knowledge 
+                training in the area of ​​Computing. The dynamics of the student&#39;s training include conceptual knowledge 
                 in Exact Sciences, Biological Sciences and Health. Thus, the three major areas that represent the fields 
                 of greatest evidence of this combination of knowledge are: Bioinformatics, Medical Image Processing,
                 Clinical Records Management and Public Health. Therefore, it is a computer science with additional 
