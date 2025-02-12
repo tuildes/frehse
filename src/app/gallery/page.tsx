@@ -3,7 +3,18 @@ import Styles from './gallery.module.css'
 import Banner from '@/components/Banner/banner'
 
 const content: { image: string; alt: string }[] = [
+    { image: '/frehse/gallery/notion-night.jpg', alt: 'Notion at evening' },
     { image: '/frehse/gallery/cat.jpg', alt: 'Cat in chair' },
+    { image: '/frehse/gallery/barbixas.jpg', alt: 'Armchairs and a stage' },
+    { image: '/frehse/gallery/ecomp.jpg', alt: 'Ecomp headquarters' },
+    { image: '/frehse/gallery/fire.jpg', alt: 'Fire' },
+    { image: '/frehse/gallery/landscape.jpg', alt: 'Landscape with houses and trees' },
+    { image: '/frehse/gallery/ring.jpg', alt: 'Wedding ring' },
+    { image: '/frehse/gallery/grana-azul.jpeg', alt: 'Brazilian note in blue, from the album Grana Azul by Rodrigo Zin' },
+    { image: '/frehse/gallery/roblox.png', alt: 'Florest in roblox' },
+    { image: '/frehse/gallery/setup.jpg', alt: 'Laptop and monitor' },
+    { image: '/frehse/gallery/imersao.jpg', alt: 'House and people' },
+    { image: '/frehse/gallery/vein.jpg', alt: 'Vein' },
 ]
 
 export default function Gallery() {

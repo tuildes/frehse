@@ -1,13 +1,14 @@
 @media screen and (max-width: 480px) {
     .item .item__dot {
+        margin-top: 10px;
         width: 20px !important;
         height: 20px !important;
     }
 
     .item__timeline::after {
         margin-left: 9px !important;
-        margin-top: 21px !important;
-        height: calc(100% + 40px) !important;
+        margin-top: 30px !important;
+        height: calc(100% + 45px) !important;
     }
 
     .about__content {
@@ -18,12 +19,20 @@
         font-size: 28px !important;
     }
 
+    .item .item__content .item__title {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: start !important;
+    }
+
     .item .item__content .item__description {
         text-align: left !important;
     }
 
     .item .item__content .item__title h6 {
-        font-size: 8px !important;
+        font-size: 14px !important;
+        margin-top: 4px;
     }
     
 }
@@ -109,7 +118,7 @@
 }
 
 .item .item__content .item__title h2 {
-    font-size: clamp(20px, 2vw, 32px);
+    font-size: clamp(18px, 2vw, 32px);
 }
 
 .item .item__content .item__title h6 {
@@ -119,8 +128,18 @@
     margin-left: 4px;
 }
 
+.item .item__content .item__skills,
 .item .item__content .item__description {
     text-align: justify;
     font-weight: 300;
     font-size: clamp(18px, 1.5vw, 20px);
+}
+
+.item .item__content .item__description strong {
+    font-weight: 600;
+    color: var(--first-color);
+}
+
+.item .item__content .item__skills strong {
+    font-weight: 600;
 }
