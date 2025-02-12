@@ -17,6 +17,15 @@
     .about__title {
         font-size: 28px !important;
     }
+
+    .item .item__content .item__description {
+        text-align: left !important;
+    }
+
+    .item .item__content .item__title h6 {
+        font-size: 8px !important;
+    }
+    
 }
 
 .about__wrapper {

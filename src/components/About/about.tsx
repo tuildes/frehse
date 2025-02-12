@@ -24,7 +24,7 @@ const infos: {
         skills: 'C, Bioinformatic, Pascal',
     },
     {
-        title: 'Diretor de Projetos & desenvolvedor Front End',
+        title: 'Project Director and Front End Developer',
         color: '#FF005E',
         time: '2023 ~ 2024',
         description:
