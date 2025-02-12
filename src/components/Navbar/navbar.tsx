@@ -2,7 +2,7 @@ import Link from "next/link"
 import Styles from "./navbar.module.css"
 
 import { Moirai_One } from 'next/font/google'
-const moirai = Moirai_One({ weight: "400" })
+const moirai = Moirai_One({ weight: "400" , subsets: ['latin']})
 
 const linksNavbar: { name:string, link:string }[] = [
     { name: "Home", link: "/" },
