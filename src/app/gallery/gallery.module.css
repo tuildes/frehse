@@ -1,6 +1,6 @@
-:root {
+/* :root {
     --page-primary: #00ffb3;
-}
+} */
 
 @media screen and (max-width: 575px) {
     .gallery__content {
