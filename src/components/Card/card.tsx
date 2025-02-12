@@ -27,7 +27,7 @@ export default function Card(
                     className={Styles.image} 
                     src={image} 
                     alt={name} 
-                    width={600} 
+                    width={900} 
                     height={1000} 
                 />
                 <span className={Styles.description}>

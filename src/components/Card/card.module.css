@@ -158,8 +158,8 @@
 
 .dialog__skills .chip {
     padding: 4px 6px;
-    background-color: rgba(157, 255, 0, 0.2);
-    color: rgb(157, 255, 0);
+    background-color: rgba(0, 174, 255, 0.1);
+    color: rgb(0, 174, 255);
     font-weight: 600;
     border-radius: 8px;
 }

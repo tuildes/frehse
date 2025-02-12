@@ -16,30 +16,25 @@ const infos: {
     skills: string
 }[] = [
     {
-        title: "...",
+        title: "Informática Biomédica",
         color: "#FF9D00",
         time: "2024 ~ now",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu volutpat nibh." +
-        "Maecenas facilisis neque condimentum vestibulum imperdiet. Nulla  tempus pretium massa commodo" +
-        "blandit. Fusce luctus eros quis ligula  consequat blandit. Praesent tristique condimentum metus," +
-        "vel pulvinar  dolor dictum non. Duis in viverra ante. Nunc vitae tincidunt ex.  Phasellus eget" +
-        "augue vitae arcu ultrices hendrerit ut non justo. Sed  vitae purus non justo ornare luctus ut id quam." +
-        "Nunc eget malesuada  risus. Pellentesque gravida vitae dui elementum pulvinar.",
-        skills: "C++, R, ..."
+        description: "...",
+        skills: "C, Pascal, R, ..."
     },
     {
-        title: "...",
+        title: "Diretor de Projetos & desenvolvedor Front End",
         color: "#FF005E",
-        time: "...",
+        time: "2023 ~ 2024",
         description: "...",
-        skills: "..."
+        skills: "Front End, Vue, Laravel, Nuxt, React, Project Management, ..."
     },
     {
         title: "Apple Developer Academy (ADA)",
-        color: "#00B2FF",
-        time: "...",
+        color: "#945aff",
+        time: "2025 ~ now",
         description: "...",
-        skills: "..."
+        skills: "T.B.A."
     }
 ]
 
@@ -67,7 +62,7 @@ export default function About() {
                                     {item.description}
                                 </p>
                                 <span className={Styles.item__skills}>
-                                    <strong style={{color: item.color}}>Tecnologias</strong>: c++, r, ...
+                                    <strong style={{color: item.color}}>Tecnologias</strong>: {item.skills}
                                 </span>
                             </div>
                         </div>

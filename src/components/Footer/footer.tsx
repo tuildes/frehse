@@ -7,9 +7,9 @@ import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin,
 const contactIcons: { icon: ReactElement, link: string }[] = [
     { icon: <IconBrandGithub size={32} color="#000" />, link: "https://github.com/tuildes" },
     { icon: <IconBrandLinkedin size={32} color="#000" />, link: "https://linkedin.com/in/gfrehse" },
-    { icon: <IconBrandGmail size={32} color="#000" />, link: "" },
-    { icon: <IconBrandInstagram size={32} color="#000" />, link: "" },
-    { icon: <IconBrandNotion size={32} color="#000" />, link: "" },
+    { icon: <IconBrandGmail size={32} color="#000" />, link: "mailto:frehsegustavo@gmail.com" },
+    { icon: <IconBrandInstagram size={32} color="#000" />, link: "https://www.instagram.com/gustfrehse/" },
+    { icon: <IconBrandNotion size={32} color="#000" />, link: "https://www.notion.so/@tuildes" },
 ]
 
 const pages: { name: string, link: string }[] = [
@@ -30,7 +30,7 @@ export default function Footer() {
                     ))}
                 </div>
                 <small className={Styles.footer__citation}>
-                    <i>"Estações..."</i> - Makalister, em BARKA EP
+                    <i>"Todas as coisas mudam com o passar do tempo / E eu não sei por que insisto em dizer que sou o mesmo"</i> - Makalister on Estações
                 </small>
                 <div className={Styles.footer__routers}>
                     {pages.map((item, index) => (
