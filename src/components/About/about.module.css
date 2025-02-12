@@ -1,10 +1,22 @@
+@media screen and (max-width: 480px) {
+    .item .item__dot,
+    .item__timeline::after {
+        display: none;
+    }
+
+    .about__content {
+        padding: 32px 16px !important;
+    }
+}
+
 .about__wrapper {
     width: 100vw;
     height: auto;
 }
 
 .about__wrapper hr {
-    color: #222222;
+    height: 0px;
+    border: 1px solid #222222;
 }
 
 .about__content {
@@ -77,13 +89,19 @@
     align-items: center;
 }
 
+.item .item__content .item__title h2 {
+    font-size: clamp(20px, 2vw, 32px);
+}
+
 .item .item__content .item__title h6 {
     opacity: 0.5;
     font-size: 16px;
+    text-align: right;
+    margin-left: 4px;
 }
 
 .item .item__content .item__description {
     text-align: justify;
     font-weight: 300;
-    font-size: 20px;
+    font-size: clamp(18px, 1.5vw, 20px);
 }

@@ -1,3 +1,85 @@
+@media screen and (max-width: 639px) {
+    .introduction__wrapper {
+        height: 100vh !important;
+    }
+
+    .introduction__content {
+        flex-direction: column !important;
+        flex-flow: column-reverse !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .introduction__profilePhoto {
+        width: 20vw !important;
+        height: 20vw !important;
+        min-width: 200px;
+        min-height: 200px;
+    }
+
+    .introduction__about {
+        padding: 20px !important;
+    }
+
+    .introduction__about,
+    .introduction__name {
+        width: 100% !important;
+        height: auto !important;
+        min-width: 0 !important;
+        text-align: center;
+    }
+
+    .introduction__nameBackground {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw !important;
+        height: 100vh !important;
+        filter: brightness(0.25) !important;
+    }
+
+    .introduction__nameText small {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 959px) {
+    .introduction__about {
+        padding: 20px !important;
+    }
+
+    .introduction__about {
+        width: 65vw !important;
+    }
+
+    .introduction__name {
+        min-width: 0 !important;
+    }
+
+    .introduction__nameBackground {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw !important;
+        height: 100vh !important;
+        filter: brightness(0.25) !important;
+    }
+
+    .introduction__nameText small {
+        display: none;
+    }
+
+    .introduction__profilePhoto {
+        width: 30vw !important;
+        height: 30vw !important;
+    }
+
+    .introduction__nameText {
+        font-size: 32px !important;
+        line-height: 34px !important 
+    }
+}
+
 .introduction__wrapper {
     height: 100vh;
     width: 100vw;
@@ -11,13 +93,8 @@
 }
 
 .introduction__profilePhoto {
-    position: absolute;
-
     width: 360px;
     height: 360px;
-
-    top: calc(50% - 180px);
-    right: calc(35vw - 180px);
 }
 
 .introduction__about {
@@ -28,15 +105,18 @@
 
     justify-content: center;
     padding: 80px;
-    font-size: 24px;
-}
-
-.introduction__about div {
-    margin-right: 120px;
+    font-size: clamp(18px, 2vw, 24px);
 }
 
 .introduction__about div h1 {
     margin-bottom: 20px;
+    font-size: clamp(32px, 3vw, 48px);
+}
+
+.introduction__about div span strong {
+    color: transparent;
+    background: linear-gradient(to left, #9ccc16, #FFE000);
+    background-clip: text;
 }
 
 .introduction__links {
@@ -60,6 +140,7 @@
 .introduction__name {
     height: 100%;
     width: 35%;
+    min-width: 460px;
 }
 
 .introduction__nameText {
@@ -77,7 +158,11 @@
 }
 
 .introduction__nameText span {
-    margin-left: 120px;
+    text-align: center;
+    margin-top: 16px;
+    color: transparent;
+    background: linear-gradient(to left, #ffffff, #f0ffc7);
+    background-clip: text;
 }
 
 .introduction__nameText small {
@@ -92,6 +177,9 @@
 .introduction__nameBackground {
     filter: brightness(0.6);
     position: absolute;
+    width: 35%;
+    min-width: 460px;
+    object-fit: cover;
     z-index: -1;
     height: 100vh;
 }

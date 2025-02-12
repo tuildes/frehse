@@ -2,6 +2,37 @@
     --page-primary: #ffab2d;
 } */
 
+@media screen and (max-width: 575px) {
+    .portfolio__cards {
+        grid-template-columns: 1fr !important;
+    }
+
+    .portfolio__cards {
+        padding: 16px !important;
+    }
+
+    .portfolio__buttons {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 20px;
+    }
+
+    .portfolio__buttons button {
+        font-size: 18px !important;
+        padding: 4px 8px !important;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .portfolio__cards {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .portfolio__cards {
+        padding: 32 !important;
+    }
+}
+
 .portfolio__wrapper {
     width: 100vw;
     height: auto;
