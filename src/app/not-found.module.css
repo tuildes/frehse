@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 32px;
-    font-size: clamp(20px, 3vw ,32px);
+    font-size: clamp(20px, 3vw, 32px);
 }
 
 .error p {

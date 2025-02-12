@@ -1,29 +1,30 @@
-"use client"
+'use client'
 
-import { useState } from "react"
-import Styles from "./portfolio.module.css"
-import Card from "@/components/Card/card"
-import Banner from "@/components/Banner/banner"
+import { useState } from 'react'
+import Styles from './portfolio.module.css'
+import Card from '@/components/Card/card'
+import Banner from '@/components/Banner/banner'
 
-const types: string[] = [ // Tipos de portfolios, all (default)
-    "all",
-    "front-end",
-    "softwares",
-    "others",
+const types: string[] = [
+    // Tipos de portfolios, all (default)
+    'all',
+    'front-end',
+    'softwares',
+    'others',
 ]
 
-const cards: { 
-    name: string,
-    image: string,
-    description: string,
-    type: number,
-    date: string,
-    showcaseImage: string,
-    longDescription: string,
-    principalType: string,
-    skills: string[],
+const cards: {
+    name: string
+    image: string
+    description: string
+    type: number
+    date: string
+    showcaseImage: string
+    longDescription: string
+    principalType: string
+    skills: string[]
     links: string[]
- }[] = [
+}[] = [
     // {
     //     name: "Snow Impact (GAME)",
     //     image: "/portfolio/placeholder.image.png",
@@ -43,7 +44,7 @@ const cards: {
     //     type: 1,
     //     date: "2024",
     //     showcaseImage: "/portfolio/placeholder.showcase.png",
-    //     longDescription: "", 
+    //     longDescription: "",
     //     principalType: "Website (Front End)",
     //     skills: [ "..." ],
     //     links: [ "..." ]
@@ -55,7 +56,7 @@ const cards: {
     //     type: 1,
     //     date: "2024",
     //     showcaseImage: "/portfolio/placeholder.showcase.png",
-    //     longDescription: "...", 
+    //     longDescription: "...",
     //     principalType: "Website (Front End)",
     //     skills: [ "Vue 2", "Nuxt 2", "Scrum", "GTM", "Laravel", "PHP 7.4" ],
     //     links: [ "http://jrconsultoria.com.br/" ]
@@ -67,7 +68,7 @@ const cards: {
     //     type: 2,
     //     date: "2024",
     //     showcaseImage: "/portfolio/placeholder.showcase.png",
-    //     longDescription: "...", 
+    //     longDescription: "...",
     //     principalType: "Software written in C",
     //     skills: [ "C", "Image Comparison", "LBP" ],
     //     links: [ "https://github.com/tuildes/image-comparison" ]
@@ -79,22 +80,24 @@ const cards: {
     //     type: 1,
     //     date: "2023",
     //     showcaseImage: "/portfolio/placeholder.showcase.png",
-    //     longDescription: "", 
+    //     longDescription: "",
     //     principalType: "Landing Page (Front End)",
     //     skills: [ "Vue 2", "Nuxt 2", "Vuetify", "Json-server" ],
     //     links: [ "https://github.com/tuildes/landing-page-vue2" ]
     // },
     {
-        name: "Retrozule",
-        image: "/portfolio/retrozule.image.png",
-        description: "A web puzzle game involving easy url and html manipulation challenges in a retro theme, using vue.js, nuxt.js and vuetify. ",
+        name: 'Retrozule',
+        image: '/portfolio/retrozule.image.png',
+        description:
+            'A web puzzle game involving easy url and html manipulation challenges in a retro theme, using vue.js, nuxt.js and vuetify. ',
         type: 1,
-        date: "2024",
-        showcaseImage: "/portfolio/placeholder.showcase.png",
-        longDescription: "This was a project to test a new technology for implementation in early 2024 at Ecomp. Made entirely by me after testing, mainly to find errors and inconsistencies for later use in the company. The theme and style of the game is an old idea of ​​mine to make a \"mini NOTPRON\" with a retro anime theme. ", 
-        principalType: "Web game (Front End)",
-        skills: [ "Front End", "Vue 3", "Nuxt 3", "Technology migration" ],
-        links: [ "https://github.com/tuildes/Retrozule" ]
+        date: '2024',
+        showcaseImage: '/portfolio/placeholder.showcase.png',
+        longDescription:
+            'This was a project to test a new technology for implementation in early 2024 at Ecomp. Made entirely by me after testing, mainly to find errors and inconsistencies for later use in the company. The theme and style of the game is an old idea of ​​mine to make a "mini NOTPRON" with a retro anime theme. ',
+        principalType: 'Web game (Front End)',
+        skills: ['Front End', 'Vue 3', 'Nuxt 3', 'Technology migration'],
+        links: ['https://github.com/tuildes/Retrozule'],
     },
     // {
     //     name: "Notion Templates",
@@ -103,7 +106,7 @@ const cards: {
     //     type: 3,
     //     date: "2024",
     //     showcaseImage: "/portfolio/placeholder.showcase.png",
-    //     longDescription: "", 
+    //     longDescription: "",
     //     principalType: "Templates to free usage on Notion",
     //     skills: [ "..." ],
     //     links: [ "https://www.notion.so/@tuildes" ]
@@ -115,9 +118,9 @@ const cards: {
     //     type: 3,
     //     date: "2024",
     //     showcaseImage: "/portfolio/placeholder.showcase.png",
-    //     longDescription: "...", 
+    //     longDescription: "...",
     //     principalType: "...",
-    //     skills: [ "Vue 3", "Nuxt 3", "Vuetify", "Pinia", "Laravel", "PHP 7.4", 
+    //     skills: [ "Vue 3", "Nuxt 3", "Vuetify", "Pinia", "Laravel", "PHP 7.4",
     //               "SCRUM", "Team management", "Organization", "Project documentation"],
     //     links: []
     // },
@@ -128,7 +131,7 @@ const cards: {
     //     type: 3,
     //     date: "2024",
     //     showcaseImage: "/portfolio/placeholder.showcase.png",
-    //     longDescription: "", 
+    //     longDescription: "",
     //     principalType: "...",
     //     skills: [ "..." ],
     //     links: [ "..." ]
@@ -140,31 +143,32 @@ const cards: {
     //     type: 2,
     //     date: "2024",
     //     showcaseImage: "/portfolio/placeholder.showcase.png",
-    //     longDescription: "", 
+    //     longDescription: "",
     //     principalType: "...",
     //     skills: [ "..." ],
     //     links: [ "..." ]
     // },
- ]
+]
 
 export default function Portfolio() {
-
     const [selected, setSelected] = useState(0)
 
     return (
         <div>
-            <Banner 
-                title="Portfolio" 
-                subtitle="Code works, notion templates and others" 
+            <Banner
+                title="Portfolio"
+                subtitle="Code works, notion templates and others"
                 image="/banner.portfolio.png"
             />
             <main className={Styles.portfolio__wrapper}>
                 <div className={Styles.portfolio__content}>
                     <div className={Styles.portfolio__buttons}>
                         {types.map((btn, index) => (
-                            <button 
-                                key={index} 
-                                className={(index == selected) ? Styles.selected : ''}
+                            <button
+                                key={index}
+                                className={
+                                    index == selected ? Styles.selected : ''
+                                }
                                 onClick={() => setSelected(index)}
                             >
                                 {btn}
@@ -172,9 +176,13 @@ export default function Portfolio() {
                         ))}
                     </div>
                     <div className={Styles.portfolio__cards}>
-                        {cards.filter(card => ((selected === 0) || (card.type === selected)))
+                        {cards
+                            .filter(
+                                (card) =>
+                                    selected === 0 || card.type === selected
+                            )
                             .map((card, index) => (
-                                <Card 
+                                <Card
                                     key={index}
                                     name={card.name}
                                     image={card.image}
@@ -186,10 +194,10 @@ export default function Portfolio() {
                                     skills={card.skills}
                                     links={card.links}
                                 />
-                        ))}
+                            ))}
                     </div>
                 </div>
             </main>
         </div>
-    );
+    )
 }
