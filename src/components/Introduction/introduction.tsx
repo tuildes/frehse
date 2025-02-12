@@ -17,12 +17,14 @@ export default function Introduction() {
                     <div>
                         <h1>Hi i`m Tuildes 👋</h1>
                         <span>
-                            I am a programmer in the areas of computer science and bioinformatics
-                            And currently a student of <strong>Biomedical Informatics</strong> at UFPR. 
-                            <br /><br />
-                            With experience in web and software development. 
+                            I am a programmer in the areas of computer science
+                            and bioinformatics And currently a student of{' '}
+                            <strong>Biomedical Informatics</strong> at UFPR.
                             <br />
-                            I am currently at the <strong>Apple Developer Academy</strong>.
+                            <br />
+                            With experience in web and software development.
+                            <br />I am currently at the{' '}
+                            <strong>Apple Developer Academy</strong>.
                         </span>
                         <div className={Styles.introduction__links}>
                             <Link href={githubLink} target="__blank">

@@ -9,12 +9,12 @@ import Navbar from '@/components/Navbar/navbar'
 import Footer from '@/components/Footer/footer'
 
 export const viewport: Viewport = {
-    themeColor: "#000000",
+    themeColor: '#000000',
     initialScale: 1,
-    width: "device-width",
+    width: 'device-width',
     maximumScale: 1,
-    viewportFit: "cover",
-};
+    viewportFit: 'cover',
+}
 
 export const metadata: Metadata = {
     title: 'Gustavo Frehse',

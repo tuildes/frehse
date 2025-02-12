@@ -6,12 +6,7 @@ import Card from '@/components/Card/card'
 import Banner from '@/components/Banner/banner'
 
 // Tipos de portfolios, all (default)
-const types: string[] = [
-    'all',
-    'front-end',
-    'softwares',
-    'others',
-]
+const types: string[] = ['all', 'front-end', 'softwares', 'others']
 
 const cards: {
     name: string

@@ -1,6 +1,6 @@
 @media screen and (max-width: 639px) {
     .introduction__wrapper {
-        height: 100vh !important;
+        height: auto !important;
     }
 
     .introduction__content {
@@ -8,6 +8,8 @@
         flex-flow: column-reverse !important;
         justify-content: center;
         align-items: center;
+        padding: 128px 0;
+        position: relative;
     }
 
     .introduction__profilePhoto {
@@ -34,7 +36,7 @@
         top: 0;
         left: 0;
         width: 100vw !important;
-        height: 100vh !important;
+        height: 100% !important;
         filter: brightness(0.25) !important;
     }
 
@@ -76,7 +78,7 @@
 
     .introduction__nameText {
         font-size: 32px !important;
-        line-height: 34px !important 
+        line-height: 34px !important;
     }
 }
 
@@ -115,7 +117,7 @@
 
 .introduction__about div span strong {
     color: transparent;
-    background: linear-gradient(to left, #9ccc16, #FFE000);
+    background: linear-gradient(to left, #9ccc16, #ffe000);
     background-clip: text;
 }
 

@@ -40,8 +40,8 @@ const pages: { name: string; link: string }[] = [
 ]
 
 const albums: string[] = [
-    "Grana Azul - Rodrigo Zin",
-    "Bittersweet Memories - Yun Li",
+    'Grana Azul - Rodrigo Zin',
+    'Bittersweet Memories - Yun Li',
 ]
 
 export default function Footer() {
@@ -61,7 +61,8 @@ export default function Footer() {
                     ))}
                 </div>
                 <small className={Styles.footer__citation}>
-                    <strong>Today&rsquo;s album recommendation:</strong> {albums[randomInt(albums.length)]}
+                    <strong>Today&rsquo;s album recommendation:</strong>{' '}
+                    {albums[randomInt(albums.length)]}
                 </small>
                 <div className={Styles.footer__routers}>
                     {pages.map((item, index) => (
