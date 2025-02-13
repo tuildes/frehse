@@ -15,6 +15,12 @@ const content: { image: string; alt: string }[] = [
     { image: '/frehse/gallery/setup.jpg', alt: 'Laptop and monitor' },
     { image: '/frehse/gallery/imersao.jpg', alt: 'House and people' },
     { image: '/frehse/gallery/vein.jpg', alt: 'Vein' },
+    { image: '/frehse/gallery/bedroom.jpg', alt: 'Bedroom' },
+    { image: '/frehse/gallery/iguacu.jpg', alt: 'Cataratas do Iguaçu' },
+    { image: '/frehse/gallery/stones.jpg', alt: 'Stones and water' },
+    { image: '/frehse/gallery/quati.jpg', alt: 'Quati' },
+    { image: '/frehse/gallery/bittersweet.jpg', alt: 'Disk of bittersweet memories' },
+    { image: '/frehse/gallery/post.violet.png', alt: 'Violet evergarden with citation' },
 ]
 
 export default function Gallery() {
