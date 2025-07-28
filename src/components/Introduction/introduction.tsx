@@ -48,7 +48,7 @@ export default function Introduction() {
                     <Image
                         className={Styles.introduction__nameBackground}
                         src="/frehse/home/florest-thiago-falcao.jpg"
-                        placeholder='blur'
+                        placeholder="blur"
                         blurDataURL="/frehse/home/loading.jpg"
                         alt="Florest"
                         width={600}

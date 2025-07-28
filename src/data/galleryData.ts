@@ -4,9 +4,15 @@ export const galleryData: { image: string; alt: string }[] = [
     { image: '/frehse/gallery/barbixas.jpg', alt: 'Armchairs and a stage' },
     { image: '/frehse/gallery/ecomp.jpg', alt: 'Ecomp headquarters' },
     { image: '/frehse/gallery/fire.jpg', alt: 'Fire' },
-    { image: '/frehse/gallery/landscape.jpg', alt: 'Landscape with houses and trees' },
+    {
+        image: '/frehse/gallery/landscape.jpg',
+        alt: 'Landscape with houses and trees',
+    },
     { image: '/frehse/gallery/ring.jpg', alt: 'Wedding ring' },
-    { image: '/frehse/gallery/grana-azul.jpeg', alt: 'Brazilian note in blue, from the album Grana Azul by Rodrigo Zin' },
+    {
+        image: '/frehse/gallery/grana-azul.jpeg',
+        alt: 'Brazilian note in blue, from the album Grana Azul by Rodrigo Zin',
+    },
     { image: '/frehse/gallery/roblox.png', alt: 'Florest in roblox' },
     { image: '/frehse/gallery/setup.jpg', alt: 'Laptop and monitor' },
     { image: '/frehse/gallery/imersao.jpg', alt: 'House and people' },
@@ -15,6 +21,12 @@ export const galleryData: { image: string; alt: string }[] = [
     { image: '/frehse/gallery/iguacu.jpg', alt: 'Cataratas do Iguaçu' },
     { image: '/frehse/gallery/stones.jpg', alt: 'Stones and water' },
     { image: '/frehse/gallery/quati.jpg', alt: 'Quati' },
-    { image: '/frehse/gallery/bittersweet.jpg', alt: 'Disk of bittersweet memories' },
-    { image: '/frehse/gallery/post.violet.png', alt: 'Violet evergarden with citation' },
+    {
+        image: '/frehse/gallery/bittersweet.jpg',
+        alt: 'Disk of bittersweet memories',
+    },
+    {
+        image: '/frehse/gallery/post.violet.png',
+        alt: 'Violet evergarden with citation',
+    },
 ]

@@ -57,7 +57,9 @@ export default function Portfolio() {
                                             description={card.description}
                                             date={card.date}
                                             showcaseImage={card.showcaseImage}
-                                            longDescription={card.longDescription}
+                                            longDescription={
+                                                card.longDescription
+                                            }
                                             principalType={card.principalType}
                                             skills={card.skills}
                                             links={card.links}

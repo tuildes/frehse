@@ -30,7 +30,9 @@
     aspect-ratio: 1 / 1.25;
     cursor: pointer;
 
-    transition: filter 0.5s, transform 0.5s;
+    transition:
+        filter 0.5s,
+        transform 0.5s;
     transform: scale(1);
 }
 

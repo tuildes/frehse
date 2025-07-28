@@ -20,41 +20,49 @@ const infos: {
         title: "Bachelor's degree in biomedical informatics (UFPR)",
         color: '#FF9D00',
         time: '2024 ~ now',
-        description:
+        description: (
             <>
-                The Biomedical Informatics course at UFPR is a bachelor&#39;s degree that combines and provides 
-                students with a curriculum that provides solid and integrated training in the <strong>areas of Computing, 
-                Biosciences and Health</strong>. The Biomedical Informatics course at UFPR has as a differential a predominant 
-                training in the area of ​​Computing. The dynamics of the student&#39;s training include conceptual knowledge 
-                in Exact Sciences, Biological Sciences and Health. Thus, the three major areas that represent the fields 
-                of greatest evidence of this combination of knowledge are: Bioinformatics, Medical Image Processing,
-                Clinical Records Management and Public Health. Therefore, it is a computer science with additional 
-                study in the aforementioned medical areas.
-            </>,
+                The Biomedical Informatics course at UFPR is a bachelor&#39;s
+                degree that combines and provides students with a curriculum
+                that provides solid and integrated training in the{' '}
+                <strong>areas of Computing, Biosciences and Health</strong>. The
+                Biomedical Informatics course at UFPR has as a differential a
+                predominant training in the area of ​​Computing. The dynamics of
+                the student&#39;s training include conceptual knowledge in Exact
+                Sciences, Biological Sciences and Health. Thus, the three major
+                areas that represent the fields of greatest evidence of this
+                combination of knowledge are: Bioinformatics, Medical Image
+                Processing, Clinical Records Management and Public Health.
+                Therefore, it is a computer science with additional study in the
+                aforementioned medical areas.
+            </>
+        ),
         skills: 'C, Bioinformatic and Pascal',
     },
     {
         title: 'Project Director and Front End Developer',
         color: '#FF005E',
         time: '2023 ~ 2024',
-        description: 
+        description: (
             <>
-                I spent 2 full years at a <strong>junior company (Ecomp)</strong>, learning how to manage projects, provide training, 
-                manage groups,  work in leadership and the executive side of the company, and deal with new technology and migrations. 
-                In addition, I was the director of the project board during 2024, achieving high goals during my management. 
-                I also participated in the development of several projects as a front-end developer and managed other projects 
+                I spent 2 full years at a{' '}
+                <strong>junior company (Ecomp)</strong>, learning how to manage
+                projects, provide training, manage groups, work in leadership
+                and the executive side of the company, and deal with new
+                technology and migrations. In addition, I was the director of
+                the project board during 2024, achieving high goals during my
+                management. I also participated in the development of several
+                projects as a front-end developer and managed other projects
                 with Scrum.
-            </>,
+            </>
+        ),
         skills: 'Front End, Vue, Laravel, Nuxt, React, Project Management, Team management and Scrum',
     },
     {
         title: 'Apple Developer Academy (ADA)',
         color: '#945aff',
         time: '2025 ~ now',
-        description: 
-            <>
-                [...]
-            </>,
+        description: <>[...]</>,
         skills: '[...]',
     },
 ]
@@ -92,7 +100,7 @@ export default function About() {
                                     <h2>{item.title}</h2>
                                     <h6>{item.time}</h6>
                                 </div>
-                                <p 
+                                <p
                                     style={{
                                         borderColor: item.color,
                                         '--first-color': item.color,
@@ -102,7 +110,7 @@ export default function About() {
                                                     ? index + 1
                                                     : 0
                                             ].color,
-                                    }} 
+                                    }}
                                     className={Styles.item__description}
                                 >
                                     {item.description}

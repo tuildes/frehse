@@ -5,10 +5,8 @@ import {
     IconBrandGithub,
     IconBrandInstagram,
     IconBrandLinkedin,
-    IconBrandNotion,
     IconBrandGmail,
 } from '@tabler/icons-react'
-import { randomInt } from 'crypto'
 
 const contactIcons: { icon: ReactElement; link: string }[] = [
     {

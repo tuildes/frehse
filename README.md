@@ -11,6 +11,7 @@
 ...
 
 ## Commands
+
 ```bash
 # Install dependencies
 npm install;
@@ -23,7 +24,7 @@ npm run format;
 ```
 
 ## 🚀 Arquivos
-    
+
     src/            // Pasta da SOURCE e códigos do projeto
     ├── auxiliar.c    // Funções auxiliares do projeto
     ├── auxiliar.h    // Assinaturas das funções auxiliares
@@ -31,7 +32,7 @@ npm run format;
     ├── lbp.h         // Assinaturas das funções PGM e LBP
     └── main.c        // Corpo do software + main()
     makefile        // Arquivo MAKEFILE que gera o executável
-    README.md       // Este README com a descrição do projeto 
+    README.md       // Este README com a descrição do projeto
 
 <!--
 ## Licença
@@ -43,4 +44,3 @@ Licenciado sob a licença XXX. Veja o arquivo `LICENSE` para mais detalhes.
 <br />
 
 <p align="center">Criado com 💙 por <a href="https://github.com/tuildes">tuildes</a></p>
-
