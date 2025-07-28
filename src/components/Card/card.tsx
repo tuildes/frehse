@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { IconX } from '@tabler/icons-react'
+import { ReactElement } from 'react'
 
 export default function Card({
     name,
@@ -23,10 +24,10 @@ export default function Card({
     description: string
     date: string
     showcaseImage: string
-    longDescription: string
+    longDescription: ReactElement
     principalType: string
     skills: string[]
-    links: string[]
+    links: { name: string; url: string }[]
 }) {
     const [opened, setOpened] = useState(false)
 
@@ -102,10 +103,10 @@ export default function Card({
                                 {links.map((link, subIndex) => (
                                     <Link
                                         key={subIndex}
-                                        href={link}
+                                        href={link.url}
                                         target="_blank"
                                     >
-                                        {link}
+                                        {link.name}
                                     </Link>
                                 ))}
                             </div>

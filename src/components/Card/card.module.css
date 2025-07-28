@@ -26,14 +26,17 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    filter: saturate(0.25);
+    filter: saturate(0.5);
     aspect-ratio: 1 / 1.25;
+    cursor: pointer;
 
-    transition: filter 0.25s;
+    transition: filter 0.5s, transform 0.5s;
+    transform: scale(1);
 }
 
 .card__content .image:hover {
     filter: saturate(1);
+    transform: scale(1.02);
 }
 
 .card__content .description {
@@ -89,6 +92,8 @@
 .dialog__header .leftContent .image {
     border-radius: 10px;
     margin-right: 16px;
+    object-fit: cover;
+    object-position: center top;
 }
 
 .dialog__header .leftContent .title {
@@ -149,6 +154,10 @@
     font-weight: 200;
     font-size: 20px;
     text-align: justify;
+}
+
+.dialog__description li {
+    margin-left: 32px;
 }
 
 .dialog__skills {

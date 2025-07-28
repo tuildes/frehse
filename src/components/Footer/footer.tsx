@@ -27,21 +27,12 @@ const contactIcons: { icon: ReactElement; link: string }[] = [
         icon: <IconBrandInstagram size={32} color="#000" />,
         link: 'https://www.instagram.com/gustfrehse/',
     },
-    {
-        icon: <IconBrandNotion size={32} color="#000" />,
-        link: 'https://www.notion.so/@tuildes',
-    },
 ]
 
 const pages: { name: string; link: string }[] = [
     { name: 'Home', link: '/' },
     { name: 'Gallery', link: '/gallery' },
     { name: 'Portfolio', link: '/portfolio' },
-]
-
-const albums: string[] = [
-    'Grana Azul - Rodrigo Zin',
-    'Bittersweet Memories - Yun Li',
 ]
 
 export default function Footer() {
@@ -60,10 +51,6 @@ export default function Footer() {
                         </Link>
                     ))}
                 </div>
-                <small className={Styles.footer__citation}>
-                    <strong>Today&rsquo;s album recommendation:</strong>{' '}
-                    {albums[randomInt(albums.length)]}
-                </small>
                 <div className={Styles.footer__routers}>
                     {pages.map((item, index) => (
                         <Link
