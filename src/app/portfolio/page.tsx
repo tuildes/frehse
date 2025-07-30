@@ -17,7 +17,7 @@ export default function Portfolio() {
         <div>
             <Banner
                 title="Portfolio"
-                subtitle="Front end works, softwares and others"
+                subtitle="Code works and others projects"
                 image="/frehse/banner.portfolio.png"
             />
             <main className={Styles.portfolio__wrapper}>

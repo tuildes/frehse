@@ -70,6 +70,85 @@ export const cards: {
         ),
 
         // Fisiologia em ação
+        Card(
+            'Fisiologia em ação',
+            '/frehse/portfolio/fisiologia.image.png',
+            "Website for UFPR's “@fisiologia.em.acao” for educational quizzes in the field of biology and human physiology",
+            2,
+            '2025',
+            '/frehse/portfolio/fisiologia.showcase.png',
+            <>
+                <p>
+                    This is the result of an outreach project to build a website for
+                    the UFPR Physiology in Action program, originally @Endo.Games.
+                    Therefore, it is a website for{' '}
+                    <strong>
+                        educational quizzes in the area of human biology and
+                        physiology
+                    </strong>
+                    , aiming to assist students and those interested in learning
+                    these subjects.
+                </p>
+                <br />
+
+                <video controls width="100%">
+                    <source
+                        src="/frehse/portfolio/fisiologia.video.mp4"
+                        type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                </video>
+
+                <br />
+                <br />
+                <p>
+                    This was the result of an outreach project to build a website
+                    for the UFPR Physiology in Action program, originally
+                    @Endo.Games. It provides educational quizzes in the area of
+                    human biology and physiology, aiming to assist students and
+                    those interested in learning these subjects.
+                    <br />
+                    <br />
+                    During this process, the website was designed (layout),
+                    implemented in Vue 3 and Nuxt 3, and a database was created in
+                    Laravel to manage the website`s data.
+                    <br />
+                    <br />
+                    As part of the project`s artistic freedom, the website was
+                    designed and conceptualized by the project members themselves,
+                    with the goal of creating a user-friendly and intuitive website,
+                    primarily utilizing a minimalist, clean theme and bringing a
+                    card-playing identity to the quizzes.
+                </p>
+
+                <br />
+                <h2>My Contributions</h2>
+                <ul>
+                    <li>Full Front-End Implementation</li>
+                    <li>Back-End Completion</li>
+                    <li>Website Design and Layout</li>
+                </ul>
+
+                <br />
+                <h2>Project Structure</h2>
+                <ul>
+                    <li>Login & Registration</li>
+                    <li>Home Page with Main Quizzes</li>
+                    <li>Themes</li>
+                    <li>Profile</li>
+                    <li>Quiz</li>
+                    <li>Administration Dashboard</li>
+                </ul>
+            </>,
+            'web',
+            ['Vue', 'Nuxt', 'Vuetify', 'Laravel'],
+            [
+                {
+                    name: 'Github',
+                    url: 'https://github.com/tuildes/fisiologia-em-acao',
+                },
+            ]
+        ),
 
         // Card(
         //     "Snow Impact (GAME)",

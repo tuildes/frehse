@@ -162,6 +162,11 @@
     margin-left: 32px;
 }
 
+.dialog__description h2 {
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
 .dialog__skills {
     display: flex;
     gap: 8px;
